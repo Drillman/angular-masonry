@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { 
+  font-family: 'Roboto', sans-serif;; 
+    margin:0px !important;
+    background-image: url('assets/images/stripes-light.png');
+    background-repeat: repeat;
+}

@@ -1,0 +1,54 @@
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    margin-bottom: 10px;
+    padding-left:5px;
+    padding-right:5px;
+    overflow: hidden;
+  }
+  
+  .grid-item {
+    float: left;
+  }
+  
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .item-title{
+    background-color: #313131;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%231e1e1e' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E");      padding: 20px 15px;
+    color:white;
+    text-align: end;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .main{
+      text-align: start;
+  }
+
+  .image-container{
+      overflow: hidden;
+      background-color: #000;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; 
+  }
+  .image-container img {
+    opacity: 1;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all .4s;
+	transition: all .4s;
+    
+  }
+  .image-container:hover img {
+    opacity:.3;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
